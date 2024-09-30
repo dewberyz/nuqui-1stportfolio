@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'Poppins'; sans-serif;
+}
+section
+{
+position: relative;
+width: 100%;
+min-height: 100vh;
+padding: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #fff;
+}
+header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header .logo
+{
+position: relative;
+max-width: 80px;
+}
+header ul
+{
+position: relative;
+display: flex;
+}
+header ul li
+{
+list-style: none;
+}
+header ul li a
+{
+display: inline-block;
+color: #333;
+font-weight: 400;
+margin-left: 40px;
+text-decoration: none;
+}
+.home {
+box-sizing: border-box;
+}
+.content
+{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: centers'
+}
+.content .textBox
+{
+position: relative;
+max-width: 600px;
+}
+.content .textBox h2
+{
+color: #333;
+font-size: 4em;
+line-height: 1.4em;
+font-weight: 500;
+}
+.content .textBox h2 span
+{
+color: #FF66CC;
+font-size: 1.2em;
+font-weight: 900;
+}
+.content .textBox p
+{
+color: #333;
+}
+.content .textBox a
+{
+display: inline-block;
+margin-top: 20px;
+padding: 8px 20px;
+background: #FF66CC;
+color: #fff;
+border-radius: 40px;
+font-weight: 500;
+letter-spacing: 1px;
+text-decoration: none;
+}
+.content .imgBox
+{
+width: 600px;
+display: flex;
+justify-content: flex-end;
+padding-right: 50px;
+margin-top; 50px;
+}
+.content .imgBox img
+{
+max-width: 450px;
+}
+.sonnyangel
+{
+position: absolute;
+left: 50%;
+bottom: 20px;
+transform: translateX(-50%);
+display: flex;
+}
+.sonnyangel li
+{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+cursor: pointer;
+transition: 0.5s;
+}
+.sonnyangel li:hover
+{
+transform:translateY(-15px);
+}
+.sonnyangel li img
+{
+max-width: 100px;
+}
+.sci
+{
+position: absolute;
+top: 50%;
+right: 5%;
+transform: translateY(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.sci li
+{
+list-style: none;
+}
+.sci li a
+{
+display: inline-block;
+margin: 5px 0;
+transform: scale(0.6);
+filter: invert(1)
+}
+.circle
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #FFD1DC;
+clip-path: circle(600px at right 800px);
+}
+
+
+.about {
+background: #ffd1dc;
+}
+.content1
+{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.content1 .textBox1
+{
+position: relative;
+max-width: 90%;
+}
+.content1 .textBox1 h2
+{
+color: #e75480;
+font-size: 4em;
+line-height: 1.4em;
+font-weight: 500;
+}
+.content1 .textBox1 h2 span
+{
+color: #fff;
+font-size: 1.2em;
+font-weight: 900;
+text-align: right;
+}
+.content1 .textBox1 p
+{
+color: #333;
+text-align: center;
+font-size: 20px;
+}
+.content1 .textBox1 table { 
+margin-left: auto;
+margin-right: auto;
+}
+
+.activities {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+
+.lessons {
+margin: 0;
+padding: 10%;
+background: #ffe2f6;
+}
+.content2
+{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: centers'
+}
+.content2 .textBox2
+{
+position: relative;
+max-width: 600px;
+}
+.content2 .textBox2 h2
+{
+color: #333;
+font-size: 4em;
+line-height: 1.4em;
+font-weight: 500;
+}
+.content2 .textBox2 h2 span
+{
+color: #FF66CC;
+font-size: 1.2em;
+font-weight: 900;
+}
+.content2 .textBox2 p
+{
+color: #333;
+}
+
+
+.reflection {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.content3
+{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.content3 .textBox3
+{
+position: relative;
+max-width: 90%;
+}
+.content3 .textBox3 h2
+{
+color: #e75480;
+font-size: 5em;
+line-height: 1.4em;
+font-weight: 500;
+}
+.content3 .textBox3 p
+{
+font-size: 18px;
+text-align: left;
+}
+html {
+scroll-behavior: smooth;
+}
+
+
